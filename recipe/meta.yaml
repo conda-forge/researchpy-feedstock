@@ -1,5 +1,5 @@
 {% set name = "researchpy" %}
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/researchpy-{{ version }}.tar.gz
-  sha256: 53ff4294675aa2a80abc5922ef165e2a5da3d0305a27e58035fb15396d281733
+  sha256: 08c1479a44d1062b5db9d4700904bf885451f2c3d3dae7857af8b141a7b71884
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
